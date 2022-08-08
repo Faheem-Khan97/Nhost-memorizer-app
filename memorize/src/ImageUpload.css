@@ -1,0 +1,86 @@
+#wrapper,
+#img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrapper {
+  padding-top: 5vh;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#img-container {
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0 0px 8px 0 rgb(0 0 0 / 11%), 0 6px 20px 0 rgb(0 0 0 / 6%);
+  position: relative;
+}
+#img-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.upload-img {
+  width: 230px;
+  object-fit: contain;
+  display: inline-block;
+  border: 1px solid teal;
+  padding: 6px;
+}
+
+.Delete {
+  padding: 3px 6px;
+  background: rgb(235, 50, 50);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+}
+input[type='file'] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+#upload-form {
+  width: 230px;
+  padding: 7vh 5px 1vh;
+  /* text-align: center; */
+  box-shadow: 0 0px 8px 0 rgb(0 0 0 / 11%), 0 6px 20px 0 rgb(0 0 0 / 6%);
+}
+#upload-form label {
+  cursor: pointer;
+  color: purple;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px auto;
+}
+
+#btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.5);
+  display: none;
+}
+
+#maxsize {
+  font-size: 10px;
+  margin-top: 2px;
+  float: justify-content;
+  color: rgb(128, 126, 126);
+  margin-left: 70px;
+  font-weight: 100;
+}
+#img-container:hover .Delete {
+  display: block;
+}
+#img-container:hover #btn-div {
+  display: flex;
+}
